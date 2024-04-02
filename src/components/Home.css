@@ -1,0 +1,103 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: aquamarine;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .show{
+    display: block;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .login{
+    background-color:#282c34;
+    min-height: 60vh;
+    min-width: 65vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 30px;
+  }
+
+  .login h1{
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  .login input{
+    border-radius: 10px;
+    padding: 5px;
+    font-size: large;
+    font-weight: normal;
+    border: 1px solid rgb(137, 151, 155);
+    transition: border-color 150ms ease-in-out 0s;
+    outline: none;
+    color: rgb(33, 49, 60);
+    background-color: rgb(255, 255, 255);
+  }
+
+  .login input:hover{
+    box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
+}
+
+  .forg-pass a{
+    text-decoration: underline;
+  }
+
+  .forg-pass a:hover{
+    text-decoration: none;
+  }
+
+  .forg-pass{
+    font-size:small;
+  }
+
+.error{
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: red;
+    text-align: center;
+}
+
+.button:disabled{
+    background-color: grey !important;
+}
