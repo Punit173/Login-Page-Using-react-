@@ -101,3 +101,17 @@
 .button:disabled{
     background-color: grey !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .login{
+    min-height: 30vh;
+    min-width: 35vh;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .login{
+    min-height: 10vh;
+    min-width: 15vh;
+  }
+}

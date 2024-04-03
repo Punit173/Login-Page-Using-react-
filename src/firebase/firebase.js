@@ -5,6 +5,7 @@ import { getAuth } from "firebase/auth"
 const firebaseConfig = {
   apiKey: "AIzaSyBmGx2zjdWw6O3tlzP7bdTqk9LCkHzFb2E",
   authDomain: "login-page-7ccd8.firebaseapp.com",
+  databaseURL: "https://login-page-7ccd8-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "login-page-7ccd8",
   storageBucket: "login-page-7ccd8.appspot.com",
   messagingSenderId: "671910252727",
