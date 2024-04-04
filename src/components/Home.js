@@ -5,8 +5,8 @@ import './Home.css';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase/firebase';
 
-export default function Home() {
 
+export default function Home() {
     const [values,setValues] = useState({
         name:"",
         email:"",
@@ -66,6 +66,13 @@ export default function Home() {
     }
 
     const [action,setaction] = useState("Intro");
+    var show = document.getElementById('showpass');
+    var eyeopen = document.getElementById('see');
+    eyeopen.onclick = () => {
+        show.setAttribute('TYPE','TEXT');
+    }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -81,7 +88,10 @@ export default function Home() {
             <form action="" className='login'>
                 <h1>LOGIN</h1>
                 <input type="text" name='username' id='' placeholder='Username' required onChange={event=>setValues1(prev=>({ ...prev,email: event.target.value}))}/>
-                <input type="password" name="password" placeholder='Password' id="" required onChange={event=>setValues1(prev=>({ ...prev,pass: event.target.value}))}/>
+                <div className='privacy'>
+                <input type="password" name="password" placeholder='Password' id="showpass" required onChange={event=>setValues1(prev=>({ ...prev,pass: event.target.value}))}/>
+                <img src={logo} id='see'/>
+                </div> 
                 <p className='error'>{errorMsg}</p>
                 <p className='forg-pass'><a href=""><span>Click Here</span></a> to forget password</p>
                 <button className='btn btn-primary' disabled={submitButtonDisabled} onClick={handleSubmission1}>SignIn</button>

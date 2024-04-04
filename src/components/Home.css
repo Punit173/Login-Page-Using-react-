@@ -46,7 +46,7 @@
   }
 
   .login{
-    background-color:#282c34;
+    background-color:white;
     min-height: 60vh;
     min-width: 65vh;
     display: flex;
@@ -109,9 +109,24 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .login{
-    min-height: 10vh;
-    min-width: 15vh;
+    min-height: 5vh;
+    min-width: 10vh;
   }
+}
+
+
+.privacy{
+  padding-left: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.privacy img{
+  display: flex;
+  height: 20px;
+  width: 35px;
 }
