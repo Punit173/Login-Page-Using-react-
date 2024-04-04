@@ -66,11 +66,11 @@ export default function Home() {
     }
 
     const [action,setaction] = useState("Intro");
-    var show = document.getElementById('showpass');
-    var eyeopen = document.getElementById('see');
-    eyeopen.onclick = () => {
-        show.setAttribute('TYPE','TEXT');
-    }
+    // var show = document.getElementById('showpass');
+    // var eyeopen = document.getElementById('see');
+    // eyeopen.onclick = () => {
+    //     show.setAttribute('TYPE','TEXT');
+    // }
 
 
   return (
