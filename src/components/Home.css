@@ -46,7 +46,7 @@
   }
 
   .login{
-    background-color:white;
+    background-color: #282c34;
     min-height: 60vh;
     min-width: 65vh;
     display: flex;

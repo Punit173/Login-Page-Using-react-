@@ -88,10 +88,7 @@ export default function Home() {
             <form action="" className='login'>
                 <h1>LOGIN</h1>
                 <input type="text" name='username' id='' placeholder='Username' required onChange={event=>setValues1(prev=>({ ...prev,email: event.target.value}))}/>
-                <div className='privacy'>
                 <input type="password" name="password" placeholder='Password' id="showpass" required onChange={event=>setValues1(prev=>({ ...prev,pass: event.target.value}))}/>
-                <img src={logo} id='see'/>
-                </div> 
                 <p className='error'>{errorMsg}</p>
                 <p className='forg-pass'><a href=""><span>Click Here</span></a> to forget password</p>
                 <button className='btn btn-primary' disabled={submitButtonDisabled} onClick={handleSubmission1}>SignIn</button>
