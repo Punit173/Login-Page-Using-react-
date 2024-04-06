@@ -47,6 +47,7 @@
 
   .login{
     background-color: #282c34;
+    border-radius: 10px;
     min-height: 60vh;
     min-width: 65vh;
     display: flex;
