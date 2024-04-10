@@ -4,6 +4,7 @@ import Login from './Login';
 import './Home.css';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase/firebase';
+import { getAuth, updatePassword } from "firebase/auth";
 
 
 export default function Home() {
@@ -64,6 +65,20 @@ export default function Home() {
             console.log("Error=",err.message);
         })
     }
+
+    // const auth = getAuth();
+
+    // const user = auth.currentUser;
+    // const newPassword = getASecureRandomPassword();
+
+    // const updatePassword=()=>{
+    //     updatePassword(user, newPassword).then(() => {
+    //         // Update successful.
+    //       }).catch((error) => {
+    //         // An error ocurred
+    //         // ...
+    //       });
+    // }
 
     const [action,setaction] = useState("Intro");
     // var show = document.getElementById('showpass');
