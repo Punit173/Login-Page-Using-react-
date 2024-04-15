@@ -102,7 +102,7 @@ export default function Home() {
         <div className={action==="Login"?"show login":"hide"}>
             <form action="" className='login'>
                 <h1>LOGIN</h1>
-                <input type="text" name='username' id='' placeholder='Username' required onChange={event=>setValues1(prev=>({ ...prev,email: event.target.value}))}/>
+                <input type="text" name='username' id='' placeholder='E-Mail' required onChange={event=>setValues1(prev=>({ ...prev,email: event.target.value}))}/>
                 <input type="password" name="password" placeholder='Password' id="showpass" required onChange={event=>setValues1(prev=>({ ...prev,pass: event.target.value}))}/>
                 <p className='error'>{errorMsg}</p>
                 <p className='forg-pass'><a href=""><span>Click Here</span></a> to forget password</p>
