@@ -155,3 +155,12 @@
   height: 20px;
   width: 35px;
 }
+
+.show_log{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.show_log:hover{
+  text-decoration: none;
+}
